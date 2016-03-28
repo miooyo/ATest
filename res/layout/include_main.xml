@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+    
+	<include layout="@layout/main"/>
+	
+	<FrameLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+			<TextView
+	    		android:layout_height="wrap_content"
+	    		android:layout_width="wrap_content"
+	    		android:text="hello!"
+	    		android:textSize="20dp"/>
+	</FrameLayout>
+	
+	<Button
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:text="显示隐藏事件"
+	    android:id="@+id/btn"/>
+	<ViewStub 
+	    android:id="@+id/viewstub"
+	   android:layout="@layout/submain"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"/>
+
+	<Button
+	    android:id="@+id/button1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Button" />
+
+	<Button
+	    android:id="@+id/button_image"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="带图片的Toast" />
+
+	<Button
+	    android:id="@+id/button_place"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="修改Toast的位置" />
+
+	<Button
+	    android:id="@+id/button4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="自定义布局" />
+
+	<Button
+	    android:id="@+id/alert_dialog"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="确认对话框"/>
+	
+	<Button
+	    android:id="@+id/single_dialog"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="单选对话框"/>
+		
+	<Button
+	    android:id="@+id/multi_dialog"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="多选对话框"/>
+	
+	<Button
+	    android:id="@+id/list_dialog"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="listView对话框"/>
+
+</LinearLayout>
+	</ScrollView>
